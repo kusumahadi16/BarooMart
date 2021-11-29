@@ -7,7 +7,7 @@
     background-color: #ffffff;
 }
 
-li, a, h4 {
+li, a, h4, p {
     font-family: "Josefin Sans", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -58,7 +58,7 @@ main {
 }
 
 .card {
-    position: relative;
+    position: inherit;
 }
 
 .card:hover {
@@ -79,40 +79,13 @@ ul {
     list-style: none;
 }
 
-.footer {
-    background-color: #24262b;
-    padding: 70px 0;
-}
-
-.footer-col {
-    justify-content: space-between;
-    width: 25%;
-    padding: 0 15px;
-}
-
-.footer-col h4 {
-    font-size: 18px;
-    text-transform: capitalize;
-    margin-bottom: 30px;
-    font-weight: 500;
-    position: relative;
-}
-
-.footer-col h4::before {
-    content: '';
+footer {
     position: absolute;
-    left: 0;
-    bottom: -10px;
-    background-color: #0088a9;
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
-.footer-col li a {
-    transition: all 0.3s ease 0s;
-}
-
-.footer-col li a:hover {
-    color: #0088a9;
+.footer p {
+    padding: 10px 0 10px 10%;
 }
