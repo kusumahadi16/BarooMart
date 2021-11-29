@@ -4,14 +4,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252A;
+    background-color: #ffffff;
 }
 
-li, a, button {
+li, a, h4 {
     font-family: "Josefin Sans", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #edf0f1;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -19,5 +19,100 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 10px 10%;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #0088a9;
+}
+
+main {
+    width: 80%;
+    max-width: 960px;
+    margin: auto;
+    background-color: #24262b;
+    padding: 10px;
+}
+
+.card-kategori {
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    position: relative;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    flex-wrap: nowrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footer-col {
+    justify-content: space-between;
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #0088a9;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col li a {
+    transition: all 0.3s ease 0s;
+}
+
+.footer-col li a:hover {
+    color: #0088a9;
 }
