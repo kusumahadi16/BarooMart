@@ -3,33 +3,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BarooMart - Contact</title>
+    <title>BarooMart</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img class="logo" src=".\img\logo_resize100.png" alt="logo">
+        <a href="./home.html"><img class="logo" src=".\img\logo_resize100.png" alt="logo"></a>
         <nav>
             <ul class="nav__links">
-                <li><a href="#">Galeri Barang</a></li>
-                <li><a href="#">Pemesanan</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="./galeri_barang.html">Galeri Barang</a></li>
+                <li><a href="./pemesanan.html">Pemesanan</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="card-kategori">
-            <div class="card">
-                <img src="./img/logo.png">
-                <h4>Gadget</h4>
+        <div class="container-mother">
+            <div class="mother-left">
+                <h1>Profile</h1>
+                <img class="photo" src="./img/RH_photo.jpg">
             </div>
-            <div class="card">
-                <img src="./img/logo.png">
-                <h4>Gadget</h4>
+            <div class="mother-right">
+                <h1></h1>
+                <h1></h1>
+                <div class="pemesanan">
+                    <div class="ringkasan-item">
+                        <h2 class="center"><b>Nama</b></h2>
+                        <div class="input">
+                            <input type="text" id="nama" value="Rizky Hadikusumah">
+                        </div>
+                    </div>
+                    <div class="ringkasan-item">
+                        <h2 class="center"><b>NIM</b></h2>
+                        <div class="input">
+                            <input type="text" id="nim" value="352041004">
+                        </div>
+                    </div>
+                    <div class="ringkasan-item">
+                        <h2 class="center"><b>Program Studi</b></h2>
+                        <div class="input">
+                            <input type="text" id="prodi" value="Sistem Informasi">
+                        </div>
+                    </div>
+                    <div class="ringkasan-item">
+                        <h2 class="center"><b>No Telepon</b></h2>
+                        <div class="input">
+                            <input type="text" id="tlp" value="0818-809-997">
+                        </div>
+                    </div>
+                    <div class="ringkasan-item">
+                        <h2 class="center"><b>Email</b></h2>
+                        <div class="input">
+                            <input type="text" id="email" value="hadikusumahrizky@gmail.com">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-    <footer class="footer">
+    <footer class="footer" style="position: fixed;">
         <p><b>Copyright &copy; 2021</b></p>
     </footer>
 </body>
