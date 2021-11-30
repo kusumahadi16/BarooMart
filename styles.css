@@ -218,7 +218,7 @@ input[type=text].noborder {
 
 .photo {
     max-height: auto;
-    max-width: 100%;
+    max-width: 90%;
     border-radius: 50%;
 }
 
