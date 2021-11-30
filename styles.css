@@ -188,6 +188,16 @@ input[type=submit] {
     cursor: pointer;
 }
 
+input[type=submit]:hover {
+    background-color: #00076f;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+input[type=text].noborder {
+    box-shadow: 0;
+    border: 0;
+}
+
 .container-mother {
     display: flex;
     width: 100%;
