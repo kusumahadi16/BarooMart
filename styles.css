@@ -130,23 +130,12 @@ main {
     padding-bottom: 10px;
 }
 
-.pemesanan{
+.pemesanan, .alamat{
     display: block;
     position: relative;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     border-radius: 30px;
     margin: 10px;
-    box-sizing: inherit;
-}
-
-.alamat{
-    display: block;
-    display: relative;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    margin-top: 100px;
-    margin-left: 10px;
-    margin-right: 10px;
     box-sizing: inherit;
 }
 
