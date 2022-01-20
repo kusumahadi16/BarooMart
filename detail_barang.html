@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarooMart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script type="text/javascript">
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const nama = urlParams.get('nama');
+            const harga = urlParams.get('harga');
+            const gambar = urlParams.get('gambar');
+            // document.getElementById("nama").setAttribute("value", nama);
+            document.getElementById("nama").innerHTML = nama;
+            document.getElementById("harga").innerHTML = harga;
+            // document.getElementById("harga").setAttribute("value", harga);
+            document.getElementById("gambar").setAttribute("src", gambar)
+        };
+        
+    </script>
+    <header>
+        <a href="./home.html"><img class="logo" src=".\img\logo_resize100.png" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="./galeri_barang.html">Galeri Barang</a></li>
+                <li><a href="./pemesanan.html">Pemesanan</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container-mother">
+            <div class="mother-left">
+                <h1></h1>
+                <img class="photo-product" id="gambar">
+            </div>
+            <div class="mother-right">
+                <h1></h1>
+                <h1></h1>
+                <div class="pemesanan">
+                    <div class="ringkasan-item">
+                        <h2 class="center"><b id="nama"></b></h2>
+                    </div>
+                    <div class="ringkasan-item">
+                        <h2 class="center"><b id="harga"></b></h2>
+                    </div>
+                    <div class="ringkasan-item">
+                        <h2 class="center"><b id="harga"></b></h2>
+                    </div>
+                    <div class="ringkasan-item">
+                        <table style="overflow: ;">
+                            <tr>
+                                <td>
+                                    <button class="button" style="font-size: larger;">-</button>
+                                </td>
+                                <td>
+                                    <h2 class="center" style="padding: 10px 10px; background-color: #e7e7e7" id="counter">0</h2>
+                                </td>
+                                <td>
+                                    <button class="button" style="font-size: larger;">+</button>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="input">
+                            <input type="submit" id="add" value="Add to cart">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer" style="position: fixed;">
+        <p><b>Copyright &copy; 2021</b></p>
+    </footer>
+</body>
+</html>
