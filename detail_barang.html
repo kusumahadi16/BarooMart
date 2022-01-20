@@ -19,7 +19,15 @@
             // document.getElementById("harga").setAttribute("value", harga);
             document.getElementById("gambar").setAttribute("src", gambar)
         };
-        
+        var counter = 0;
+        function plus() {
+            counter += 1;
+            document.getElementById("counter").innerHTML = counter;
+        }
+        function minus() {
+            counter -= 1;
+            document.getElementById("counter").innerHTML = counter;
+        }
     </script>
     <header>
         <a href="./home.html"><img class="logo" src=".\img\logo_resize100.png" alt="logo"></a>
@@ -51,16 +59,16 @@
                         <h2 class="center"><b id="harga"></b></h2>
                     </div>
                     <div class="ringkasan-item">
-                        <table style="overflow: ;">
+                        <table>
                             <tr>
                                 <td>
-                                    <button class="button" style="font-size: larger;">-</button>
+                                    <button class="button" style="font-size: larger;" onclick="minus()">-</button>
                                 </td>
                                 <td>
-                                    <h2 class="center" style="padding: 10px 10px; background-color: #e7e7e7" id="counter">0</h2>
+                                    <h2 class="center" style="padding: 10px 10px;" id="counter">0</h2>
                                 </td>
                                 <td>
-                                    <button class="button" style="font-size: larger;">+</button>
+                                    <button class="button" style="font-size: larger;" onclick="plus()">+</button>
                                 </td>
                             </tr>
                         </table>
