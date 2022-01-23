@@ -9,22 +9,26 @@
 
 
 @media only screen and (max-width:800px) {
-    /* For tablets: */
     .main {
       width: 80%;
       padding: 0;
     }
     .pilihan, .card-kategori, .barang {
-        overflow: auto;
+        overflow-x: scroll;
+    }
+    li, a, p, input[type=text], input[type=submit] {
+        font-size: 6px;
     }
   }
-  @media only screen and (max-width:500px) {
-    /* For mobile phones: */
+@media only screen and (max-width:500px) {
     .nav__links, .main {
       width: 100%;
     }
     .pilihan, .card-kategori, .barang {
-        overflow: auto;
+        overflow-x: scroll;
+    }
+    li, a, p, input[type=text], input[type=submit] {
+        font-size: 6px;
     }
   }
 
