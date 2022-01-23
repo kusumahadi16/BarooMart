@@ -7,6 +7,28 @@
     background-color: #ffffff;
 }
 
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .pilihan, .card-kategori, .barang {
+        overflow: auto;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .nav__links, .main {
+      width: 100%;
+    }
+    .pilihan, .card-kategori, .barang {
+        overflow: auto;
+    }
+  }
+
+
 li, a, p, input[type=text], input[type=submit]{
     font-family: "Josefin Sans", sans-serif;
     font-weight: 500;

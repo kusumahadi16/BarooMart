@@ -7,27 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <script type="text/javascript">
-        window.onload = function() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const nama = urlParams.get('nama');
-            const harga = urlParams.get('harga');
-            const gambar = urlParams.get('gambar');
-            // document.getElementById("nama").setAttribute("value", nama);
-            document.getElementById("nama").innerHTML = nama;
-            document.getElementById("harga").innerHTML = harga;
-            // document.getElementById("harga").setAttribute("value", harga);
-            document.getElementById("gambar").setAttribute("src", gambar)
-        };
-        var counter = 0;
-        function plus() {
-            counter += 1;
-            document.getElementById("counter").innerHTML = counter;
-        }
-        function minus() {
-            counter -= 1;
-            document.getElementById("counter").innerHTML = counter;
-        }
+    <script type="text/javascript" src="./index.js">
     </script>
     <header>
         <a href="./home.html"><img class="logo" src=".\img\logo_resize100.png" alt="logo"></a>
@@ -73,7 +53,7 @@
                             </tr>
                         </table>
                         <div class="input">
-                            <input type="submit" id="add" value="Add to cart">
+                            <input type="submit" id="add" value="Add to cart" onclick="addToCart()">
                         </div>
                     </div>
                 </div>

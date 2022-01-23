@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <script type="text/javascript" src="./index.js">
+    </script>
     <header>
         <a href="./home.html"><img class="logo" src=".\img\logo_resize100.png" alt="logo"></a>
         <nav>
@@ -25,9 +27,9 @@
                     <div class="item">
                         <img class="kategori-photo" src="./img/Barang/ryzen 9 5900x.jpg">
                         <div class="keterangan">
-                            <h2><b>AMD Ryzen 9 5900x</b></h2>
-                            <h2>Rp 9.000.000</h2>
-                            <h2>Jumlah : 1</h2>
+                            <h2 id="namabarang1"><b>AMD Ryzen 9 5900x</b></h2>
+                            <h2 id="harga1">Rp 9.000.000</h2>
+                            <h2 id="jumlah1">Jumlah : 1</h2>
                         </div>
                     </div>
                 </div>
@@ -35,9 +37,9 @@
                     <div class="item">
                         <img class="kategori-photo" src="./img/Barang/corsair rm 750.jpg">
                         <div class="keterangan">
-                            <h2><b>PSU Corsair RM750</b></h2>
-                            <h2>Rp 2.000.000</h2>
-                            <h2>Jumlah : 1</h2>
+                            <h2 id="namabarang2"><b>PSU Corsair RM750</b></h2>
+                            <h2 id="harga2">Rp 2.000.000</h2>
+                            <h2 id="jumlah2">Jumlah : 1</h2>
                         </div>
                     </div>
                 </div>
@@ -45,12 +47,30 @@
                     <div class="item">
                         <img class="kategori-photo" src="./img/Barang/lian li 011dw.jpg">
                         <div class="keterangan">
-                            <h2><b>Lian Li PC-011DW Dynamic White Gaming</b></h2>
-                            <h2>Rp 3.200.000</h2>
-                            <h2>Jumlah : 1</h2>
+                            <h2 id="namabarang3"><b>Lian Li PC-011DW Dynamic White Gaming</b></h2>
+                            <h2 id="harga3">Rp 3.200.000</h2>
+                            <h2 id="jumlah3">Jumlah : 1</h2>
                         </div>
                     </div>
                 </div>
+                
+                <h1>Detail Harga</h1>
+                <div class="alamat">
+                    <div class="ringkasan-item">
+                        <h2 class="center"><b>Total Harga</b></h2>
+                        <h2 class="center"><b id="harga"></b></h2>
+                    </div>
+                    <div class="ringkasan-item">
+                        <h2 class="center"><b>Total Ongkos Kirim</b></h2>
+                        <h2 class="center"><b id="ongkos"></b></h2>
+                    </div>
+                    <div class="ringkasan-item">
+                        <h2 class="center"><b>Total Tagihan</b></h2>
+                        <h2 class="center"><b id="total"></b></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="mother-right">
                 <h1>Data Diri</h1>
                 <div class="alamat">
                     <div class="ringkasan-item">
@@ -62,67 +82,38 @@
                     <div class="ringkasan-item">
                         <h2 class="center"><b>Alamat</b></h2>
                         <div class="input">
-                            <input type="text" id="nama">
+                            <input type="text" id="alamat">
                         </div>
                     </div>
                     <div class="ringkasan-item">
                         <h2 class="center"><b>Pengiriman</b></h2>
                         <div class="input">
-                            <input type="text" id="nama">
+                            <input type="text" id="pengiriman">
                         </div>
                     </div>
                     <div class="ringkasan-item">
                         <h2 class="center"><b>Kurir</b></h2>
                         <div class="input">
-                            <input type="text" id="nama">
+                            <input type="text" id="kurir">
                         </div>
                     </div>
                     <div class="ringkasan-item">
                         <h2 class="center"><b>Pembayaran</b></h2>
                         <div class="input">
-                            <input type="text" id="nama">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mother-right">
-                <h1>Ringkasan Belanja</h1>
-                <div class="pemesanan">
-                    <div class="ringkasan-item">
-                        <h4 class="center"><b>Total Harga</b></h4>
-                        <div class="input">
-                            <input class="noborder" type="text" id="total_harga" value="Rp 14.200.000" disabled>
-                        </div>
-                    </div>
-                    <div class="ringkasan-item">
-                        <h4 class="center"><b>Total Ongkos Kirim</b></h4>
-                        <div class="input">
-                            <input class="noborder" type="text" id="total_ongkir" value="Rp 50.000" disabled>
-                        </div>
-                    </div>
-                    <div class="ringkasan-item">
-                        <h4 class="center"><b>Asuransi Pengiriman</b></h4>
-                        <div class="input">
-                            <input class="noborder" type="text" id="asuransi" value="Rp 0" disabled>
-                        </div>
-                    </div>
-                    <div class="ringkasan-item">
-                        <h4 class="center"><b>Total Tagihan</b></h4>
-                        <div class="input">
-                            <input class="noborder" type="text" id="total_tagihan" value="Rp 14.250.000" disabled>
+                            <input type="text" id="pembayaran">
                         </div>
                     </div>
                     <div class="ringkasan-item">
                         <h4 class="center"></h4>
                         <div class="input">
-                            <input type="submit" id="nama">
+                            <input type="submit" id="pesan" onclick="pesan()">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer class="footer">
+    <footer>
         <p><b>Copyright &copy; 2021</b></p>
     </footer>
 </body>
